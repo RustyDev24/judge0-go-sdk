@@ -1,6 +1,80 @@
 package judge0
 
 const (
-	rapidAPIHost string = "judge0-ce.p.rapidapi.com"
-	suluAPIHost  string = "judge0-ce.p.sulu.sh"
+	rapidAPIHost string = "https://judge0-ce.p.rapidapi.com"
+	suluAPIHost  string = "https://judge0-ce.p.sulu.sh"
 )
+
+type LanguageAlias = int
+
+const (
+	ASSEMBLY LanguageAlias = iota + 1
+	BASH
+	BASIC
+	BOSQUE
+	C
+	C3
+	CLOJURE
+	COBOL
+	COMMON_LISP
+	CPP
+	CPP_CLANG
+	CPP_GCC
+	CPP_TEST
+	CPP_TEST_CLANG
+	CPP_TEST_GCC
+	CSHARP
+	CSHARP_DOTNET
+	CSHARP_MONO
+	CSHARP_TEST
+	C_CLANG
+	C_GCC
+	D
+	DART
+	ELIXIR
+	ERLANG
+	EXECUTABLE
+	FORTRAN
+	FSHARP
+	GO
+	GROOVY
+	HASKELL
+	JAVA
+	JAVAFX
+	JAVASCRIPT
+	JAVA_JDK
+	JAVA_OPENJDK
+	JAVA_TEST
+	KOTLIN
+	LUA
+	MPI_C
+	MPI_CPP
+	MPI_PYTHON
+	MULTI_FILE
+	NIM
+	OBJECTIVE_C
+	OCAML
+	OCTAVE
+	PASCAL
+	PERL
+	PHP
+	PLAIN_TEXT
+	PROLOG
+	PYTHON
+	PYTHON2
+	PYTHON2_PYPY
+	PYTHON3
+	PYTHON3_PYPY
+	PYTHON_FOR_ML
+	PYTHON_PYPY
+	R
+	RUBY
+	RUST
+	SCALA
+	SQLITE
+	SWIFT
+	TYPESCRIPT
+	VISUAL_BASIC
+)
+
+const SubmissionEndpoint = "/submission?wait=%s&base64_encoded=true"
